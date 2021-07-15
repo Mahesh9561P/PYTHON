@@ -1,2 +1,2 @@
 # PYTHON
-This repositiory contains a Folder Named Marvellous which contains assignments.Thank you.
+This repositiory contains my work and project done using python.Thank you.
