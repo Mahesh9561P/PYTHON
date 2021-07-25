@@ -2,8 +2,9 @@ import psutil as ps
 from sys import *
 import time
 import os
+import schedule
 
-def Process(Folder):
+def Process(Folder='MaheshProc'):
     if not os.path.exists(Folder):
         os.mkdir(Folder)
     
@@ -19,9 +20,13 @@ def Process(Folder):
         fd.write("%s \n"%each)
 
 def main():
-    print("------ Marvellous Infosystems ------")
+    print("------Process Logger------")
     print("Script title : "+argv[0])
-    Process(argv[1])
+    schedule.every(int(argv[1])).minutes.do(Process)
+
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
 
 if __name__ == "__main__":
     main()
