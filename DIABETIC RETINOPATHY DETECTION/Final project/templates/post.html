@@ -1,0 +1,78 @@
+{% extends "layout.html"%}
+{% block body %}
+      <!-- Page Header-->
+      <header class="masthead" style="background-image: url('{{ url_for('static',filename='assets/img/post-bg.jpg')}}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>Lets Know if you have Diabetic Retinopathy</h1>
+                            <h2 class="subheading">Few simple steps to follow</h2>
+                            <span class="meta">
+                                Product by
+                                <a href="#!">"We Care"</a>
+                                on August 24, 2021
+                                <p>1 : Click on the browse button below and select your fundus image.</p>
+                                <p>2 : Let us deal with it</p>
+                                <p>3 : This might take a while</p>
+                                <hr>    
+                                <!DOCTYPE html>
+
+                                <p>Click on the "Choose File" button to upload a file:</p>
+                                
+                                <form action="/upload-files" method="POST" enctype="multipart/form-data">
+                                    <div class="form-group"> 
+                                        <label>Select Image</label><br>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" name="image" id="image">
+                                            <label class="custom-file-input" for="image" >Select image...</label>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <button type="submit" class="btn btn-primary">Upload Image</button>
+                                </form>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <h2 class="section-heading">Symptoms</h2>
+                        <p>You might not have symptoms in the early stages of diabetic retinopathy. As the condition progresses, diabetic retinopathy symptoms may include:<br>
+                            1 : Spots or dark strings floating in your vision (floaters)<br>
+                            2 : Fluctuating vision<br>
+                            3 : Impaired color vision<br>
+                            4 : Dark or empty areas in your vision<br>
+                            5 : Vision loss<br>
+                        </p>
+                        <h2 class="section-heading">Causes</h2>
+                        <p>Over time, too much sugar in your blood can lead to the blockage of the tiny blood vessels that nourish the retina, cutting off its blood supply. As a result, the eye attempts to grow new blood vessels. But these new blood vessels don't develop properly and can leak easily.
+                        </p>
+                        <h2 class="section-heading">Risk Factors</h2>
+                        <p>Anyone who has diabetes can develop diabetic retinopathy. Risk of developing the eye condition can increase as a result of:<br>
+                            1 : Duration of diabetes — the longer you have diabetes, the greater your risk of developing diabetic retinopathy<br>
+                            2 : Poor control of your blood sugar level<br>
+                            3 : High blood pressure<br>
+                            4 : High cholesterol<br>
+                            5 : Pregnancy<br>
+                            6 : Tobacco use<br>
+                        </p>
+                        <h2 class="section-heading">Prevention</h2>
+                        <p>You can't always prevent diabetic retinopathy. However, regular eye exams, good control of your blood sugar and blood pressure, and early intervention for vision problems can help prevent severe vision loss.<br>
+                        <p> Manage your diabetes. Make healthy eating and physical activity part of your daily routine. Try to get at least 150 minutes of moderate aerobic activity, such as walking, each week. Take oral diabetes medications or insulin as directed.</p>
+                        <p>Monitor your blood sugar level. You may need to check and record your blood sugar level several times a day — more-frequent measurements may be required if you're ill or under stress. Ask your doctor how often you need to test your blood sugar.</p>
+                        <p>Ask your doctor about a glycosylated hemoglobin test. The glycosylated hemoglobin test, or hemoglobin A1C test, reflects your average blood sugar level for the two- to three-month period before the test. For most people, the A1C goal is to be under 7 percent.</p>    
+                        <p>If you smoke or use other types of tobacco, ask your doctor to help you quit. Smoking increases your risk of various diabetes complications, including diabetic retinopathy.</p>
+                        <p>Keep your blood pressure and cholesterol under control. Eating healthy foods, exercising regularly and losing excess weight can help. Sometimes medication is needed, too.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </article>
+
+{% endblock %}

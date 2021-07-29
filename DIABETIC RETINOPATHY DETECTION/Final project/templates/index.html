@@ -1,0 +1,60 @@
+{% extends "layout.html"%}
+{% block body %}
+    <!-- Page Header-->
+        <header class="masthead" style="background-image: url('{{ url_for('static',filename='assets/img/header-background.jpg' )}}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>Diabetic Retinopathy Detection</h1>
+                            <span class="subheading">World looks beautiful with healthy eyes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                            <h2 class="post-title">"The eyes are the window of your soul"</h2>
+                        </a>
+                        <p class="post-meta">
+                            Posted by
+                            <a href="#!">-William Shakespreare</a>
+                        </p>
+                    </div>
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                        <h2 class="post-title">“Almost nothing need be said when you have eyes.” </h2></a>
+                        <p class="post-meta">
+                            Posted by
+                            <a href="#!">-Tarjei Vesaas</a>
+                        </p>
+                    </div>
+                    <!-- Divider-->     
+                    <hr class="my-4" />
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                            <h2 class="post-title">. “The world only exists in your eyes. You can make it as big or as small as you want.” </h2>
+                        </a>
+                        <p class="post-meta">
+                            Posted by
+                            <a href="#!">– F. Scott Fitzgerald</a>
+                            on August 24, 2021
+                        </p>
+                    </div>
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                    <!-- Pager-->
+                    <form action="/post">
+                        <input type="submit" value="GET STARTED" class="btn btn-primary text-uppercase"/>
+                    </form>
+                    </div>
+            </div>
+        </div>
+        {% endblock %}
